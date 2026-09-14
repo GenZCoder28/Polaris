@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+/* Leaflet Tile reset protection for Tailwind */
+.leaflet-container {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 480px;
+  background-color: #dbeafe;
+  position: relative;
+  outline: none;
+}
+
+.leaflet-container img.leaflet-tile {
+  max-width: none !important;
+  max-height: none !important;
+  display: inline !important;
+  width: 256px !important;
+  height: 256px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.leaflet-pane {
+  z-index: 400 !important;
+}
+
+.leaflet-tile-pane {
+  z-index: 200 !important;
+}
+
+.leaflet-overlay-pane {
+  z-index: 400 !important;
+}
+
+.leaflet-marker-pane {
+  z-index: 600 !important;
+}
+
+.leaflet-tooltip-pane {
+  z-index: 650 !important;
+}
+
+.leaflet-popup-pane {
+  z-index: 700 !important;
+}
+
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 800 !important;
+}
