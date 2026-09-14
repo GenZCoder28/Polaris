@@ -1,0 +1,80 @@
+[
+  {
+    "reportType": "DASHBOARD_KPI",
+    "reportTitle": "Executive Command KPI Dashboard",
+    "action": "GENERATED",
+    "userEmail": "manager@ncpor.gov.in",
+    "userName": "Dr. Rajesh Sharma (Expedition Manager)",
+    "userRole": "Expedition Manager",
+    "filtersJson": "{}",
+    "recordsCount": 17,
+    "executionDurationMs": 5,
+    "id": "RPT-LOG-1789275839116-637",
+    "timestamp": "2026-09-13T05:03:59.116Z"
+  },
+  {
+    "reportType": "EXPEDITION_ANALYTICS",
+    "reportTitle": "Polar Expeditions Operational Registry Report",
+    "action": "GENERATED",
+    "userEmail": "manager@ncpor.gov.in",
+    "userName": "Dr. Rajesh Sharma (Expedition Manager)",
+    "userRole": "Expedition Manager",
+    "filtersJson": "{\"dateRange\":\"CURRENT_EXPEDITION\"}",
+    "recordsCount": 5,
+    "executionDurationMs": 1,
+    "id": "RPT-LOG-1789275641409-21",
+    "timestamp": "2026-09-13T05:00:41.409Z"
+  },
+  {
+    "reportType": "DASHBOARD_KPI",
+    "reportTitle": "Executive Command KPI Dashboard",
+    "action": "GENERATED",
+    "userEmail": "manager@ncpor.gov.in",
+    "userName": "Dr. Rajesh Sharma (Expedition Manager)",
+    "userRole": "Expedition Manager",
+    "filtersJson": "{\"dateRange\":\"CURRENT_EXPEDITION\"}",
+    "recordsCount": 17,
+    "executionDurationMs": 0,
+    "id": "RPT-LOG-1789275641379-239",
+    "timestamp": "2026-09-13T05:00:41.379Z"
+  },
+  {
+    "reportType": "EXPEDITION_ANALYTICS",
+    "reportTitle": "Polar Expeditions Operational Registry Report",
+    "action": "GENERATED",
+    "userEmail": "manager@ncpor.gov.in",
+    "userName": "Dr. Rajesh Sharma (Expedition Manager)",
+    "userRole": "Expedition Manager",
+    "filtersJson": "{\"dateRange\":\"CURRENT_EXPEDITION\"}",
+    "recordsCount": 5,
+    "executionDurationMs": 1,
+    "id": "RPT-LOG-1789275641301-392",
+    "timestamp": "2026-09-13T05:00:41.301Z"
+  },
+  {
+    "reportType": "DASHBOARD_KPI",
+    "reportTitle": "Executive Command KPI Dashboard",
+    "action": "GENERATED",
+    "userEmail": "manager@ncpor.gov.in",
+    "userName": "Dr. Rajesh Sharma (Expedition Manager)",
+    "userRole": "Expedition Manager",
+    "filtersJson": "{\"dateRange\":\"CURRENT_EXPEDITION\"}",
+    "recordsCount": 17,
+    "executionDurationMs": 5,
+    "id": "RPT-LOG-1789275641216-194",
+    "timestamp": "2026-09-13T05:00:41.216Z"
+  },
+  {
+    "id": "RPT-AUDIT-001",
+    "reportType": "DASHBOARD_KPI",
+    "reportTitle": "Operational Executive Summary Report",
+    "action": "GENERATED",
+    "userEmail": "manager@ncpor.gov.in",
+    "userName": "Dr. Rajesh Sharma (Expedition Manager)",
+    "userRole": "Expedition Manager",
+    "filtersJson": "{\"dateRange\":\"current_expedition\"}",
+    "recordsCount": 140,
+    "timestamp": "2026-09-13T03:00:41.216Z",
+    "executionDurationMs": 42
+  }
+]

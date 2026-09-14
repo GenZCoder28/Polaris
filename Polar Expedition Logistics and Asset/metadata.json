@@ -1,0 +1,10 @@
+{
+  "name": "Remix Remix Remix Remix Remix Remix Remix POLARIS - Polar Expedition Command \u0026 Logistics",
+  "description": "Centralized command-and-control platform for polar expedition planning, cargo tracking, inventory depletion forecasting, personnel rotation, and emergency response for NCPOR.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
