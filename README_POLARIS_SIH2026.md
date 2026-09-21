@@ -200,8 +200,7 @@ planning information.
 
 ### Prototype
 
-![Expedition Planning](docs/images/expedition-management.png)
-
+<img width="1518" height="776" alt="image" src="https://github.com/user-attachments/assets/a37c393d-c9bc-4f07-9d43-fab530c70574" />
 ------------------------------------------------------------------------
 
 ## Phase 2 --- Personnel & Team Assignment
@@ -265,7 +264,7 @@ The prototype provides a navigation interface showing:
 
 ### Prototype
 
-![Polar Navigation](docs/images/polar-navigation.png)
+<img width="1522" height="772" alt="image" src="https://github.com/user-attachments/assets/cdd7d628-3bf6-4207-a71c-49640a376fdd" />
 
 GNSS/GPS can provide vessel and vehicle position information. The system
 uses that position information for operational visualization and
@@ -472,7 +471,7 @@ The Emergency module records:
 
 ### Prototype
 
-![Emergency Management](docs/images/emergency-management.png)
+<img width="1522" height="775" alt="image" src="https://github.com/user-attachments/assets/cb78daf7-0e9a-409c-a68b-bedc51bdf7e4" />
 
 The current prototype includes incident monitoring, acknowledgement,
 resolution actions, emergency communication status, and manual incident
@@ -480,7 +479,7 @@ reporting.
 
 ### Manual Emergency Reporting
 
-![Emergency Reporting](docs/images/emergency-report-dialog.png)
+<img width="1522" height="772" alt="image" src="https://github.com/user-attachments/assets/0347937c-f308-4b0a-ac7e-8f43e0523f80" />
 
 Authorized users can submit an incident with:
 
