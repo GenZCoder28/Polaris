@@ -1,278 +1,84 @@
 # POLARIS
 ## Integrated Polar Expedition Logistics & Asset Management System
 
-> A centralized platform for managing polar expeditions, personnel, cargo, inventory, assets, vessels, weather, emergency operations, communication, GIS visualization, and reporting.
+POLARIS is a centralized platform for managing **polar expeditions, personnel, cargo, inventory, assets, vehicles, weather, emergencies, and communication**.
 
-**Smart India Hackathon 2026**  
-**Problem Statement:** SIH26062  
-**Theme:** Smart Automation  
-**Category:** Software
+The system brings operational information into one platform so that expedition teams can plan activities, track resources, respond to emergencies, and make better operational decisions.
 
 ---
 
-## Table of Contents
+## Overview
 
-- [Overview](#overview)
-- [Problem Statement](#problem-statement)
-- [Proposed Solution](#proposed-solution)
-- [Key Features](#key-features)
-- [How POLARIS Works](#how-polaris-works)
-- [Phases of Working](#phases-of-working)
-- [Example Scenario](#example-scenario)
-- [Database Structure](#database-structure)
-- [Cargo vs Inventory](#cargo-vs-inventory)
-- [System Architecture](#system-architecture)
-- [Technology Stack](#technology-stack)
-- [Project Modules](#project-modules)
-- [AI & Intelligence Strategy](#ai--intelligence-strategy)
-- [Data & Security](#data--security)
-- [Prototype Screenshots](#prototype-screenshots)
-- [Project Structure](#project-structure)
-- [Business Model](#business-model)
-- [Feasibility & Viability](#feasibility--viability)
-- [Expected Outcomes](#expected-outcomes)
-- [Potential Applications](#potential-applications)
-- [Future Scope](#future-scope)
-- [Project Status](#project-status)
-- [Smart India Hackathon](#smart-india-hackathon)
-- [Prototype Disclaimer](#prototype-disclaimer)
-- [Why POLARIS?](#why-polaris)
-- [License](#license)
+Polar expeditions involve many connected activities:
 
----
-
-# Overview
-
-Polar expedition operations involve multiple interconnected activities that must be coordinated across stations, vessels, personnel, cargo, inventory, assets, weather conditions, and emergency response teams.
-
-POLARIS is designed as a centralized web-based operational platform that brings these activities together into a unified system.
-
-The platform provides:
-
-- Expedition planning and registration
-- Personnel and team management
-- Operational personnel movement
-- QR-based location updates
-- Cargo management
-- Container and manifest management
-- Shipment and voyage tracking
-- Vessel and vehicle tracking
-- Station inventory management
-- Inventory forecasting
-- Resupply recommendations
+- Expedition planning
+- Personnel management
+- Personnel movement
+- Cargo and shipment tracking
+- Inventory management
 - Asset management
-- Asset maintenance
+- Vehicle and vessel tracking
+- Weather monitoring
+- Emergency management
+- Communication
+- Reporting and analytics
+
+When these activities are handled separately, it becomes difficult to maintain a clear view of the expedition.
+
+POLARIS provides a **single operational platform** for managing these activities.
+
+---
+
+## Key Features
+
+- Expedition planning and management
+- Personnel and team management
+- QR-based operational movement tracking
+- Cargo and container management
+- Shipment tracking
+- Inventory tracking and forecasting
+- Asset and maintenance management
+- GNSS/GPS-based vessel and vehicle tracking
 - Weather and environmental monitoring
 - Weather risk detection
-- Emergency and incident management
-- Communication and notifications
+- Emergency management
+- SMS, email and in-app notifications
 - GIS-based operational visualization
-- Reporting and analytics
+- Reports and analytics
 - Role-based access control
 - Audit logging
-- System administration
-
-The core objective is to create a **single operational picture** for authorized expedition and logistics personnel.
-
-> **One Platform → One Operational Picture → Better Coordination**
 
 ---
 
-# Problem Statement
+## Problem Addressed
 
-Polar expedition operations require coordination between:
+Polar expedition operations involve many resources and teams.
 
-- Personnel
-- Expeditions
-- Stations
-- Operational locations
-- Vessels
-- Vehicles
-- Cargo
-- Containers
-- Shipments
-- Inventory
-- Assets
-- Weather information
-- Emergency teams
-- Communication systems
+Important information such as:
 
-When these activities are maintained through disconnected systems, it becomes difficult to maintain a consistent and up-to-date operational view.
+- Personnel locations
+- Cargo movement
+- Inventory levels
+- Equipment condition
+- Vehicle locations
+- Weather conditions
+- Emergency situations
 
-### Major Operational Challenges
+may exist in different systems or records.
 
-- Fragmented operational information
-- Difficult expedition planning
-- Limited cargo visibility
-- Manual logistics coordination
-- Difficulty monitoring station inventory
-- Difficulty identifying future stock shortages
-- Manual personnel movement recording
-- Limited vessel and vehicle visibility
-- Asset maintenance tracking challenges
-- Changing weather conditions
-- Delayed risk identification
-- Emergency coordination challenges
-- Notification delivery challenges
-- Lack of a unified geographic operational view
-- Difficulty generating consolidated reports
+This can make coordination and decision-making difficult.
 
-POLARIS addresses these challenges by connecting operational modules through a centralized backend and database.
+POLARIS addresses this by connecting these operational areas into one system.
 
 ---
 
-# Proposed Solution
+## Our Solution
 
-POLARIS connects the major operational activities of a polar expedition into one centralized platform.
+POLARIS uses a centralized database and modular backend to connect expedition operations.
 
-### Complete Operational Flow
+**Plan Expedition → Assign Personnel → Manage Cargo → Track Shipments → Receive Inventory → Monitor Assets → Track Operations → Monitor Weather → Detect Risks → Manage Emergency → Notify Teams → Generate Reports**
 
-**Expedition Planning → Personnel & Team Assignment → Cargo / Shipment Preparation → Vessel / Vehicle Movement → Station Operations → Inventory & Asset Monitoring → Weather Monitoring → Risk / Incident Detection → Emergency Response → Communication → GIS Dashboard → Reporting**
-
-Each module has a defined responsibility while sharing common operational data.
-
-### Core Design Principles
-
-- Centralized operational data
-- Modular architecture
-- Role-based access
-- Explainable data-driven intelligence
-- Real-time or near-real-time updates where connectivity is available
-- Operational traceability
-- Auditability
-- Separation of cargo and inventory
-- Human review for operational decisions
-
----
-
-# Key Features
-
-## Expedition Operations
-
-- Expedition registration
-- Expedition planning
-- Expedition timeline
-- Station assignment
-- Operational location configuration
-- Team assignment
-- Personnel assignment
-- Expedition requirements
-- Planned activities
-- Expedition status tracking
-
-## Personnel Operations
-
-- Personnel records
-- Team assignment
-- Expedition assignment
-- Station assignment
-- Operational location assignment
-- QR-based personnel movement
-- Movement history
-- Operational location updates
-
-## Logistics
-
-- Cargo management
-- Container management
-- Manifest management
-- Shipment management
-- Voyage management
-- ETA monitoring
-- Destination tracking
-- Receiving management
-
-## Vessel & Vehicle Operations
-
-- Vessel records
-- Vehicle records
-- GNSS/GPS position data
-- Voyage tracking
-- Geographic visualization
-- Operational status
-
-## Inventory
-
-- Stock management
-- Receiving
-- Consumption
-- Issue
-- Transfer
-- Adjustment
-- Inventory history
-- Forecasting
-- Stockout risk
-- Resupply recommendations
-
-## Assets
-
-- Asset registration
-- Asset status
-- Asset location
-- Asset condition
-- Operating hours
-- Maintenance schedules
-- Maintenance history
-- Lifecycle tracking
-
-## Weather & Environment
-
-- Station weather
-- Marine weather
-- Forecast information
-- Weather thresholds
-- Risk levels
-- Critical weather detection
-
-## Emergency Management
-
-- Emergency reporting
-- Incident creation
-- Severity classification
-- Location tracking
-- Responsible team assignment
-- Response tracking
-- Resolution tracking
-- Emergency audit history
-
-## Communication
-
-- In-app notifications
-- SMS
-- Email
-- Notification templates
-- Priority management
-- Delivery status
-- Retry handling
-- Acknowledgement tracking
-
-## GIS & Analytics
-
-- Station visualization
-- Vessel visualization
-- Vehicle visualization
-- Operational locations
-- Shipment routes
-- Weather-risk visualization
-- Emergency locations
-- Operational dashboards
-- Reports
-- KPIs
-- Historical analysis
-
----
-
-# How POLARIS Works
-
-The overall POLARIS operational lifecycle is:
-
-**Expedition Planning → Personnel & Team Assignment → Cargo / Shipment Preparation → Vessel / Vehicle Movement → Station Operations → Personnel QR Movement → Inventory & Asset Monitoring → Weather & Environmental Monitoring → Risk / Incident Detection → Emergency Management → Communication & Notifications → GIS + Officer Dashboard → Reporting & Analytics**
-
-### Centralized Operational Model
-
-**User / Sensor / External API → FastAPI Backend → Validation & Business Rules → PostgreSQL / Supabase → Module Processing → Dashboard / GIS / Notifications / Reports**
-
-This allows multiple modules to work from the same operational source of truth.
+The platform is designed around operational data rather than continuous personnel surveillance.
 
 ---
 
@@ -280,118 +86,54 @@ This allows multiple modules to work from the same operational source of truth.
 
 ## Phase 1 — Expedition Planning
 
-The workflow begins when an authorized officer creates an expedition.
-
-An expedition record can contain:
+The expedition manager creates an expedition and enters:
 
 - Expedition ID
-- Expedition code
-- Official expedition title
-- Expedition year
-- Target region
-- Expedition leader
-- Timeline
+- Expedition name
+- Start and end dates
 - Stations
 - Operational locations
 - Teams
 - Personnel
-- Requirements
 - Planned activities
-- Scientific scope
+- Resource requirements
 
-### Expedition Planning Workflow
+The information is stored in the database and can be searched or filtered.
 
-**Create Expedition → Enter Expedition Details → Assign Stations → Configure Operational Locations → Assign Teams → Assign Personnel → Add Requirements → Define Activities → Save Expedition**
+### Prototype
 
-### Prototype Image
+<img width="1518" height="772" alt="image" src="https://github.com/user-attachments/assets/d360632c-5378-4e0b-88d4-279eb8d7de16" />
 
-**Image to upload:** `expedition-management.png`
 
-**What this image should show:**
+The dashboard provides an overview of active expeditions, personnel, teams, stations, and operational information.
 
-- Expedition dashboard
-- Expedition statistics
-- Recent expedition registry
-- Search and filtering
-- Expedition status
-- Target region
-- Expedition leader
-- Timeline
+### Expedition Registration
 
-**Repository path:**
+<img width="1517" height="776" alt="image" src="https://github.com/user-attachments/assets/4586af07-5082-4536-a70d-2f9c06773921" />
 
-`docs/images/expedition-management.png`
+
+A new expedition can be created by entering the required operational details.
 
 ---
 
-## Phase 2 — Expedition Registration
+## Phase 2 — Personnel Management
 
-POLARIS provides a structured interface for registering a new expedition.
-
-The registration process can include:
-
-- Expedition ID
-- Expedition code
-- Official expedition title
-- Expedition year
-- Deployment information
-- Scientific scope
-- Schedule
-- Status
-
-### Registration Workflow
-
-**Open Registration → Enter Expedition Information → Configure Deployment → Define Scientific Scope → Set Schedule → Assign Status → Register Expedition**
-
-### Prototype Image
-
-**Image to upload:** `expedition-registration.png`
-
-**What this image should show:**
-
-- Register New Antarctic Expedition form
-- Expedition ID
-- Expedition code
-- Official expedition title
-- Expedition year
-- Multi-step registration process
-
-**Repository path:**
-
-`docs/images/expedition-registration.png`
-
----
-
-## Phase 3 — Personnel & Team Management
-
-Personnel can be assigned to:
+Personnel are assigned to:
 
 - Expeditions
 - Teams
 - Stations
 - Operational locations
-- Operational roles
 
-The system maintains personnel assignments and operational movement history.
+The system stores basic operational information and assignment details.
 
-### QR-Based Personnel Movement
+### Personnel Movement
 
-Personnel movement is designed for **operational movement inside the expedition environment**.
+Personnel movement is recorded only within defined operational areas.
 
-It does not track a person's complete journey from home to Antarctica.
+**Personnel → Scan Location QR → Validate Location → Create Movement Event → Update Operational Location**
 
-QR codes represent authorized operational locations such as:
-
-- Stations
-- Field locations
-- Operational areas
-- Other configured expedition locations
-
-### Personnel Movement Workflow
-
-**Personnel → Assigned Expedition → Assigned Station / Operational Location → QR Scan → Movement Event → Operational Location Updated**
-
-A movement record can contain:
+Each movement event can contain:
 
 - Personnel ID
 - Expedition ID
@@ -399,161 +141,81 @@ A movement record can contain:
 - Timestamp
 - Movement status
 
-This provides an operational location update without requiring continuous GPS tracking of personnel.
+The system does not require continuous GPS tracking of personnel.
 
 ---
 
-## Phase 4 — Polar Navigation & Vessel Operations
+## Phase 3 — Cargo Management
 
-The Polar Navigation module provides an operational view of vessels, stations, routes, and geographic context.
+Cargo represents items that are being transported.
 
-It can display:
+The system manages:
 
-- Research vessels
-- Vessel locations
-- Destination stations
-- Voyage status
-- Fast-ice information
-- Geographic map
-- Operational locations
-
-GNSS/GPS can provide vessel and vehicle position information where telemetry is available.
-
-> **GNSS/GPS provides position information, while communication infrastructure transmits that information to the platform.**
-
-### Vessel Tracking Workflow
-
-**GNSS/GPS Position → Telemetry Data → Communication Link → Backend Processing → Vessel Location Update → Map Visualization → Officer Dashboard**
-
-### Prototype Image
-
-**Image to upload:** `polar-navigation.png`
-
-**What this image should show:**
-
-- Polar Navigation interface
-- Research vessel cards
-- Vessel locations
-- Destination
-- Voyage status
-- Antarctic map
-- Station locations
-- Fast-ice operational information
-
-**Repository path:**
-
-`docs/images/polar-navigation.png`
-
----
-
-## Phase 5 — Cargo, Container & Voyage Management
-
-Cargo represents materials that are being transported between operational locations.
-
-### Logistics Workflow
-
-**Cargo → Container → Manifest → Shipment / Voyage → Vessel / Vehicle → Destination → Receiving**
-
-The system can store:
-
-- Cargo ID
-- Cargo category
-- Quantity
-- Weight / volume
-- Container ID
-- Manifest ID
+- Shipments
+- Containers
+- Manifests
 - Origin
 - Destination
-- Priority
-- Shipment status
 - Expected arrival
-- Delivery status
+- Shipment status
+- Delays
 
-### Shipment Tracking Workflow
+Basic shipment flow:
 
-**Shipment Created → Cargo Assigned → Container Assigned → Manifest Generated → Voyage Assigned → Vessel / Vehicle Movement → ETA Monitoring → Arrival → Receiving**
+**Cargo Created → Container Assigned → Manifest Created → Shipment Started → Shipment Tracked → Cargo Received**
 
 ---
 
-## Phase 6 — Station Inventory & Depletion
+## Phase 4 — Inventory Management
 
-Inventory represents supplies currently available at a station or operational location.
+Inventory represents resources currently available at a station or operational location.
 
-Inventory can include:
+Examples:
 
 - Food
 - Fuel
 - Medical supplies
-- Scientific supplies
 - Consumables
-- Operational materials
+- General supplies
 
-### Inventory Transactions
+Simple distinction:
+
+**Cargo = In Transit**
+
+**Inventory = On Hand**
+
+Inventory transactions include:
 
 - Receiving
 - Consumption
-- Issue
 - Transfer
+- Issue
 - Adjustment
 
-### Inventory Forecasting
+---
 
-The system can estimate future inventory requirements using:
+## Phase 5 — Inventory Forecasting
+
+The system uses operational data to estimate future inventory requirements.
+
+Inputs can include:
 
 - Current stock
-- Consumption rate
+- Daily consumption
 - Personnel count
 - Planned requirements
-- Upcoming shipments
+- Incoming shipments
 - Safety stock
 
-### Forecasting Workflow
+**Current Inventory → Consumption Analysis → Forecast → Possible Depletion → Resupply Recommendation → Officer Review → Resupply Request**
 
-**Current Stock → Consumption Data → Personnel Count → Operational Requirements → Forecast Remaining Stock → Safety Threshold → Stockout Risk → Resupply Recommendation → Officer Review**
-
-The forecasting component is designed as a **data-driven operational tool**, not a generative AI system.
-
-### Resupply Workflow
-
-**Inventory Forecast → Shortage Risk Detected → Resupply Recommendation → Officer Review → Resupply Request → Shipment Planning → Incoming Cargo → Receiving → Inventory Updated**
-
-The Communication module does not calculate inventory shortages. It only delivers alerts generated by the relevant operational modules.
+The forecasting system is statistical/data-driven and does not require an LLM.
 
 ---
 
-# Cargo vs Inventory
+## Phase 6 — Asset Management
 
-POLARIS separates **cargo** and **inventory** because they represent different operational states.
-
-| Cargo | Inventory |
-|---|---|
-| Materials being transported | Materials currently available |
-| In transit | On hand |
-| Shipment-focused | Station-focused |
-| Containers and manifests | Stock and consumption |
-| Origin and destination | Storage location |
-| ETA and delivery status | Quantity and stock status |
-| Voyage tracking | Inventory forecasting |
-
-### Simple Difference
-
-**CARGO = IN TRANSIT**
-
-**INVENTORY = ON HAND**
-
-### Example
-
-**Food loaded on vessel → Cargo**
-
-**Food received at station → Inventory**
-
-This separation prevents logistics movement data from being mixed with station stock data.
-
----
-
-## Phase 7 — Asset Management & Maintenance
-
-POLARIS can manage operational assets such as:
+POLARIS manages operational assets such as:
 
 - Generators
 - Vehicles
@@ -562,34 +224,52 @@ POLARIS can manage operational assets such as:
 - Medical equipment
 - Station equipment
 
-Asset information includes:
+Each asset can contain:
 
 - Asset ID
-- Asset type
+- Type
+- Status
 - Location
-- Assigned station
-- Operational status
-- Condition
 - Operating hours
 - Maintenance schedule
 - Maintenance history
-- Lifecycle information
 
-### Maintenance Workflow
+Basic workflow:
 
-**Asset Registration → Operational Monitoring → Maintenance Schedule → Maintenance Requirement → Officer Review → Maintenance Record → Asset Status Updated**
-
-A lightweight data-driven maintenance prediction component can be added where sufficient historical operating data is available.
+**Asset Registered → Asset Assigned → Asset Used → Maintenance Due → Maintenance Completed → Asset Status Updated**
 
 ---
 
-## Phase 8 — Weather & Environmental Monitoring
+## Phase 7 — Vehicle and Vessel Tracking
 
-Weather information can be collected for stations and vessels.
+Vehicles and vessels can provide GNSS/GPS position data where available.
+
+The system can display:
+
+- Current position
+- Route information
+- Movement status
+- Last known position
+- Operational location
+
+**GNSS/GPS Position → Communication Network → POLARIS Backend → Database → Map Visualization**
+
+### Polar Navigation
+
+<img width="1521" height="774" alt="image" src="https://github.com/user-attachments/assets/cf3cbfd1-6216-4780-b0ab-32a26de1132f" />
+
+
+The prototype provides a map-based operational view showing polar locations, vessels, stations, and navigation-related information.
+
+---
+
+## Phase 8 — Weather Monitoring
+
+Weather data can be obtained from weather APIs.
+
+The system can monitor:
 
 ### Station Weather
-
-Possible data includes:
 
 - Temperature
 - Wind
@@ -599,429 +279,187 @@ Possible data includes:
 
 ### Marine Weather
 
-Possible data includes:
-
 - Wind
-- Wave conditions
+- Waves
 - Visibility
-- Forecast
-- Conditions around vessel location
+- Forecast around the vessel
 
-Weather conditions can be evaluated using configurable operational thresholds.
+Weather conditions can be classified using configurable thresholds:
 
-### Weather Risk Workflow
-
-**Weather Data → Data Validation → Risk Evaluation → Normal / Warning / Critical**
-
-### Weather-to-Emergency Workflow
-
-**Weather API → Station / Vessel Location → Weather Conditions → Threshold Evaluation → Critical Risk → Emergency Created → Communication Triggered**
-
-A critical weather condition can therefore create an emergency event, while the Emergency module manages the emergency lifecycle and the Communication module handles notification delivery.
+**Weather Data → Threshold Check → Normal / Warning / Critical**
 
 ---
 
-## Phase 9 — Emergency & Incident Management
+## Phase 9 — Emergency Management
 
-Emergency incidents can originate from:
+An emergency can be created manually or generated from operational events.
+
+Possible sources include:
 
 - Severe weather
 - Personnel incidents
 - Asset failures
 - Logistics incidents
-- Manual incident reports
+- Other operational risks
 
-The Emergency module can store:
+Basic workflow:
 
-- Incident ID
-- Incident type
-- Severity
-- Location
-- Time
-- Description
-- Affected resources
-- Responsible team
-- Response actions
-- Acknowledgement
-- Resolution status
+**Event Detected → Emergency Created → Location Identified → Team Assigned → Notification Sent → Response → Update → Resolve → Audit**
 
-### Emergency Workflow
+### Emergency Dashboard
 
-**Incident Detected → Emergency Created → Location Identified → Responsible Team Assigned → Notification Sent → Acknowledgement → Response → Resolution → Audit Record**
+<img width="1522" height="773" alt="image" src="https://github.com/user-attachments/assets/1584447a-eba5-4393-8eea-5af2d5cb747e" />
 
-### Prototype Image
 
-**Image to upload:** `emergency-management.png`
+The emergency dashboard provides an operational view of active incidents and response information.
 
-**What this image should show:**
+### Report Emergency
 
-- Active incidents
-- Incident severity
-- Station status
-- Incident lead
-- Emergency communication status
-- Acknowledge action
-- Resolve action
+<img width="1516" height="767" alt="image" src="https://github.com/user-attachments/assets/07acec2b-932c-42dc-8469-57a55938c29d" />
 
-**Repository path:**
 
-`docs/images/emergency-management.png`
+Authorized users can report a station emergency with the required incident information.
 
 ---
 
-## Phase 10 — Emergency Reporting
+## Phase 10 — Communication
 
-Authorized users can manually report an emergency from a station or operational location.
+The communication module sends notifications generated by different system modules.
 
-The reporting form can contain:
-
-- Incident headline
-- Station location
-- Severity level
-- Description
-- Field notes
-
-### Emergency Reporting Workflow
-
-**User Opens Emergency Form → Enter Incident Details → Select Station → Select Severity → Add Description → Submit Alert → Emergency Created → Notification Triggered**
-
-### Prototype Image
-
-**Image to upload:** `emergency-report-dialog.png`
-
-**What this image should show:**
-
-- Report Station Emergency popup
-- Incident headline
-- Station location
-- Severity level
-- Description
-- Field notes
-- Submit alert button
-
-**Repository path:**
-
-`docs/images/emergency-report-dialog.png`
-
----
-
-## Phase 11 — Communication & Notifications
-
-The Communication module acts as the **delivery layer** of POLARIS.
-
-Other modules generate operational events or alerts, while the Communication module handles notification delivery.
-
-### Notification Sources
+Notifications can come from:
 
 - Emergency events
 - Weather risks
-- Inventory alerts
-- Asset maintenance events
-- Shipment events
+- Inventory warnings
+- Asset alerts
+- Shipment delays
 - Expedition events
 - System events
 
-### Notification Channels
+Supported channels:
 
 - In-app notifications
 - SMS
 - Email
 
-### Recipients
+Notification flow:
 
-Notifications can be directed to:
+**System Event → Notification Created → Recipient Selected → Message Sent → Delivery Status Updated**
 
-- Individuals
-- Teams
-- Station personnel
-- Expedition managers
-- Logistics officers
-- Emergency response teams
-- Food / provision officers
-- Asset / equipment officers
-- Central operations personnel
+Priority levels:
 
-### Priority Levels
+- LOW
+- NORMAL
+- HIGH
+- CRITICAL
 
-**LOW → NORMAL → HIGH → CRITICAL**
-
-### Notification Workflow
-
-**Event Generated → Notification Created → Recipient Identified → Priority Assigned → Notification Queued → Delivery Attempt → Delivered / Failed → Retry if Required → Acknowledgement**
-
-### Notification Status
-
-**CREATED → QUEUED → SENDING → SENT → DELIVERED → READ → ACKNOWLEDGED**
-
-For failed delivery:
-
-**FAILED → RETRYING → SENDING → DELIVERED**
-
-Possible notification data models include:
-
-- `Notification`
-- `NotificationRecipient`
-- `NotificationTemplate`
-- `NotificationAttempt`
-- `NotificationPreference`
-
-Structured notification templates and placeholders can be used instead of requiring an LLM to generate operational messages.
+The communication module is responsible for **delivery**, not decision-making.
 
 ---
 
-## Phase 12 — GIS & Operational Visualization
+## Phase 11 — GIS and Operational Visualization
 
-The GIS module provides a geographic view of expedition operations.
+POLARIS uses maps to display operational information.
 
-It can represent:
+The GIS interface can show:
 
 - Stations
-- Field camps
 - Operational locations
 - Vessels
 - Vehicles
-- Assets
-- Personnel movement locations
-- Shipment routes
-- Weather-risk areas
+- Routes
+- Expedition locations
 - Emergency locations
 
-OpenStreetMap can be used as the geographic map source with GIS/MapLibre components.
-
-### GIS Workflow
-
-**Operational Data → Geographic Coordinates → Map Layer Processing → GIS Visualization → Officer Dashboard**
-
-### Prototype Image
-
-**Image to upload:** `polar-navigation.png`
-
-The current Polar Navigation screen also serves as the GIS/operational visualization prototype because it demonstrates:
-
-- Antarctic geographic map
-- Vessel locations
-- Station locations
-- Voyage information
-- Operational geographic context
-- Fast-ice information
-
-**Repository path:**
-
-`docs/images/polar-navigation.png`
-
-No separate GIS screenshot is required at the current prototype stage.
+Operational data can be connected to geographic coordinates for easier monitoring.
 
 ---
 
-## Phase 13 — Officer Dashboard, Analytics & Reporting
+## Phase 12 — Reporting and Analytics
 
-The Officer Dashboard provides a centralized operational view of:
+The reporting module provides information from existing operational data.
 
-- Expedition status
-- Personnel
-- Vessel and vehicle locations
-- Cargo
-- Shipments
-- Inventory
-- Assets
-- Weather
-- Emergencies
-- Alerts
-- GIS information
-- Reports
-- Event logs
+Reports can include:
 
-The reporting module can provide:
+- Expedition statistics
+- Personnel statistics
+- Inventory status
+- Cargo status
+- Asset status
+- Maintenance records
+- Emergency statistics
+- Weather events
+- Notification delivery
+- Shipment performance
 
-- Expedition reports
-- Inventory reports
-- Shipment reports
-- Asset reports
-- Emergency metrics
-- Communication delivery metrics
-- Operational KPIs
-- Data export
-- Event history
-
-### Reporting Workflow
-
-**Operational Data → Data Aggregation → KPI Calculation → Dashboard → Filtering → Drill-Down → Report Generation → Export**
-
-Reporting is an analysis layer over operational data and does not replace the operational source of truth.
+Reports can be filtered and displayed using tables, charts, dashboards, and maps.
 
 ---
 
 # Example Scenario
 
-Consider an Antarctic expedition operating from a research station.
+### Antarctic Expedition
 
-### Operational Setup
+An expedition manager creates a new Antarctic expedition.
 
-The station has:
+**Expedition Created → Personnel Assigned → Teams Created → Stations Selected**
 
-- 40 personnel
-- Food supplies
-- Fuel
-- Medical supplies
-- Scientific equipment
-- Station generators
-- A scheduled incoming vessel
+The logistics team adds required cargo.
 
-### Step 1 — Expedition Planning
+**Cargo Created → Container Assigned → Shipment Started → Shipment Tracked**
 
-**Officer → Creates Expedition → Adds Timeline → Assigns Station → Configures Operational Locations → Assigns Teams → Assigns Personnel**
+When the cargo reaches the station:
 
-### Step 2 — Cargo Preparation
+**Cargo Received → Inventory Updated → Stock Available**
 
-**Logistics Officer → Creates Cargo → Assigns Container → Creates Manifest → Assigns Shipment → Assigns Vessel**
+During the expedition, personnel move between approved operational locations.
 
-### Step 3 — Vessel Movement
+**Personnel Reaches Location → QR Scan → Location Validated → Movement Recorded**
 
-**Vessel → GNSS/GPS Position → Telemetry → Communication Link → POLARIS Backend → Map Location Updated**
+The system continuously receives available operational information.
 
-### Step 4 — Personnel Movement
+**GNSS/GPS → Vessel Position Updated → Map Updated**
 
-**Personnel → Reaches Authorized Operational Location → QR Scan → Movement Event Created → Operational Location Updated**
+Weather data is also monitored.
 
-### Step 5 — Cargo Arrival
+**Weather API → Weather Data → Risk Check**
 
-**Vessel Arrives → Cargo Received → Shipment Status Updated → Inventory Increased**
+If severe weather crosses a configured threshold:
 
-### Step 6 — Inventory Monitoring
+**Critical Weather → Emergency Created → Emergency Team Notified**
 
-**Personnel Consume Supplies → Inventory Transaction Created → Stock Updated**
+The emergency team responds and updates the incident.
 
-### Step 7 — Inventory Forecasting
+**Response Started → Incident Updated → Emergency Resolved → Audit Record Created**
 
-**Current Stock → Consumption Rate → Personnel Count → Planned Requirements → Forecast → Stockout Risk → Resupply Recommendation**
+At the end of the expedition, the system provides operational reports.
 
-### Step 8 — Weather Monitoring
-
-**Weather API → Station / Vessel Conditions → Threshold Evaluation → Risk Level**
-
-### Step 9 — Emergency
-
-If a critical weather condition or operational incident is detected:
-
-**Critical Event → Emergency Created → Responsible Team Identified → Notification Sent → Acknowledgement → Response → Resolution**
-
-### Step 10 — Dashboard
-
-**Operational Data → GIS + Dashboard → Officer Monitoring → Reports & Analytics**
-
-### Complete Scenario Flow
-
-**Expedition Creation → Personnel Assignment → Cargo Preparation → Vessel Movement → Cargo Arrival → Inventory Update → Consumption Monitoring → Forecasting → Weather Monitoring → Risk Detection → Emergency Response → Communication → Reporting**
-
-This demonstrates how POLARIS connects logistics, inventory, personnel, assets, weather, emergency operations, and reporting into a unified workflow.
+**Operational Data → Reports → Analysis → Decision Support**
 
 ---
 
-# Database Structure
 
-POLARIS uses a centralized relational database for operational data.
+# Officer Dashboard
 
-## Core Entities
+The dashboard provides a centralized operational view.
 
-| Entity | Purpose |
-|---|---|
-| User | Stores system users |
-| Role | Defines access roles |
-| Permission | Defines system permissions |
-| Expedition | Stores expedition information |
-| Personnel | Stores personnel records |
-| Team | Stores operational teams |
-| Station | Stores station information |
-| OperationalLocation | Stores operational locations |
-| PersonnelMovement | Stores QR-based movement events |
-| Vessel | Stores vessel information |
-| Vehicle | Stores vehicle information |
-| Voyage | Stores voyage information |
-| Cargo | Stores cargo information |
-| Container | Stores container information |
-| Manifest | Stores shipment manifests |
-| Shipment | Stores shipment information |
-| InventoryItem | Stores inventory items |
-| InventoryTransaction | Stores stock movement |
-| InventoryForecast | Stores forecast results |
-| ResupplyRequest | Stores resupply recommendations and requests |
-| Asset | Stores operational assets |
-| MaintenanceRecord | Stores maintenance history |
-| WeatherObservation | Stores weather data |
-| WeatherRisk | Stores evaluated weather risks |
-| Emergency | Stores incidents and emergencies |
-| EmergencyResponse | Stores response actions |
-| Notification | Stores notification events |
-| NotificationRecipient | Stores notification recipients |
-| NotificationTemplate | Stores reusable message templates |
-| NotificationAttempt | Stores delivery attempts |
-| NotificationPreference | Stores notification preferences |
-| AuditLog | Stores system activity |
+Users can access information according to their role.
 
-## Major Relationships
+The dashboard can include:
 
-**Expedition → Personnel Assignment → PersonnelMovement**
+- Active expeditions
+- Personnel status
+- Inventory status
+- Cargo status
+- Shipment status
+- Asset status
+- Vessel and vehicle locations
+- Weather conditions
+- Emergency alerts
+- Notification status
+- Reports and analytics
 
-**Expedition → Teams → Personnel**
-
-**Expedition → Cargo → Container → Manifest → Shipment → Voyage**
-
-**Station → InventoryItem → InventoryTransaction → InventoryForecast → ResupplyRequest**
-
-**Station → Asset → MaintenanceRecord**
-
-**Station / Vessel → WeatherObservation → WeatherRisk**
-
-**Emergency → EmergencyResponse → Notification**
-
-**System Event → Notification → NotificationRecipient → NotificationAttempt**
-
-## Database Principle
-
-The database acts as the operational source of truth.
-
-**User / Sensor / API Event → Backend Validation → Database → Module Processing → Dashboard / Notification / Reporting**
-
----
-
-# System Architecture
-
-POLARIS follows a modular web application architecture.
-
-## High-Level Architecture
-
-**Officer / Authorized User → React Frontend → FastAPI Backend → Business Logic & Validation → Supabase / PostgreSQL + PostGIS → Operational Modules → Dashboard / GIS / Notifications / Reports**
-
-## External Data Flows
-
-### GNSS/GPS
-
-**GNSS/GPS → Telemetry → Backend → Vessel / Vehicle Tracking**
-
-### Weather
-
-**Weather API → Backend → Weather Monitoring → Risk Detection**
-
-### QR Movement
-
-**QR Scan → Backend → Personnel Movement Event → Operational Location Update**
-
-### Communication
-
-**Operational Event → Notification Service → In-App / SMS / Email**
-
-## Architecture Layers
-
-| Layer | Responsibility |
-|---|---|
-| Presentation Layer | Web dashboard and user interfaces |
-| API Layer | REST APIs and real-time communication |
-| Business Layer | Operational rules and workflows |
-| Data Layer | PostgreSQL / Supabase |
-| GIS Layer | PostGIS and map visualization |
-| Integration Layer | Weather APIs and telemetry |
-| Notification Layer | In-app, SMS and email delivery |
-| Security Layer | Authentication, authorization and audit logging |
+Different users can see different information based on their permissions.
 
 ---
 
@@ -1031,948 +469,141 @@ POLARIS follows a modular web application architecture.
 
 - React
 - TypeScript
-- Modern web UI components
-- MapLibre / GIS components
+- GIS and OSM
 
 ## Backend
 
 - Python
 - FastAPI
-- REST APIs
-- WebSockets where required
-- Pandas
-- NumPy
 
 ## Database
 
 - Supabase
-- PostgreSQL
-- PostGIS
 
-## GIS
+## Data Processing
+
+- Pandas
+- NumPy
+
+## Mapping
 
 - OpenStreetMap
-- MapLibre
-- PostGIS
 
 ## Tracking
 
-- GNSS/GPS
-- Vessel and vehicle telemetry where available
-- QR-based operational location scanning
+- GNSS/GPS telemetry
 
-## Weather
+## External Services
 
 - Weather APIs
-- Station weather data
-- Marine weather data
+- SMS provider
+- Email provider
 
-## Communication
+## Other Technologies
 
-- In-app notifications
-- SMS provider integration
-- Email provider integration
-- Provider abstraction
-- Retry / fallback handling
-
-## Infrastructure
-
+- QR Codes
+- WebSockets
 - Docker
-- Environment-based configuration
-- Modular backend services
-
----
-
-# Project Modules
-
-## 1. Expedition Management
-
-Handles:
-
-- Expedition registration
-- Expedition details
-- Schedules
-- Stations
-- Operational locations
-- Teams
-- Personnel
-- Requirements
-- Planned activities
-- Expedition status
-
----
-
-## 2. Personnel Management
-
-Handles:
-
-- Personnel records
-- Team assignment
-- Expedition assignment
-- Station assignment
-- Operational roles
-- Movement history
-
----
-
-## 3. Personnel Movement
-
-Handles:
-
-- QR-based location scanning
-- Operational movement events
-- Station / location updates
-- Movement history
-
-The module does not continuously track personnel GPS positions.
-
----
-
-## 4. Cargo Management
-
-Handles:
-
-- Cargo records
-- Cargo categories
-- Quantity
-- Weight / volume
-- Priority
-- Origin
-- Destination
-- Shipment status
-
----
-
-## 5. Container & Manifest Management
-
-Handles:
-
-- Container records
-- Manifest generation
-- Cargo-container mapping
-- Shipment documentation
-- Receiving information
-
----
-
-## 6. Shipment & Voyage Tracking
-
-Handles:
-
-- Shipment status
-- Voyage information
-- Vessel assignment
-- ETA
-- Destination
-- Delivery status
-
----
-
-## 7. Vessel & Vehicle Tracking
-
-Handles:
-
-- Vessel information
-- Vehicle information
-- GNSS/GPS position
-- Voyage movement
-- Geographic visualization
-- Operational status
-
----
-
-## 8. Inventory Management
-
-Handles:
-
-- Stock levels
-- Receiving
-- Consumption
-- Transfers
-- Issues
-- Adjustments
-- Inventory history
-
----
-
-## 9. Inventory Forecasting
-
-Handles:
-
-- Consumption analysis
-- Future stock estimation
-- Stockout risk
-- Safety stock evaluation
-- Resupply recommendations
-
-The forecasting component is data-driven and does not depend on an LLM.
-
----
-
-## 10. Asset Management
-
-Handles:
-
-- Asset registration
-- Asset status
-- Location
-- Condition
-- Operating hours
-- Lifecycle information
-
----
-
-## 11. Asset Maintenance
-
-Handles:
-
-- Maintenance schedules
-- Maintenance records
-- Maintenance history
-- Maintenance status
-- Optional data-driven maintenance prediction
-
----
-
-## 12. Weather Monitoring
-
-Handles:
-
-- Station weather
-- Marine weather
-- Forecast information
-- Weather thresholds
-- Weather risk levels
-
----
-
-## 13. Weather Risk Detection
-
-Handles:
-
-- Weather validation
-- Threshold evaluation
-- Risk classification
-- Critical weather event generation
-
----
-
-## 14. Emergency Management
-
-Handles:
-
-- Emergency creation
-- Incident classification
-- Severity
-- Location
-- Responsible team
-- Response actions
-- Resolution
-- Audit history
-
----
-
-## 15. Communication & Notifications
-
-Handles:
-
-- Notification generation
-- Recipient selection
-- Priority
-- Templates
-- In-app delivery
-- SMS
-- Email
-- Retry handling
-- Delivery status
-- Acknowledgement
-
----
-
-## 16. GIS Visualization
-
-Handles geographic visualization of:
-
-- Stations
-- Vessels
-- Vehicles
-- Assets
-- Operational locations
-- Shipments
-- Weather risks
-- Emergency locations
-
----
-
-## 17. Reporting & Analytics
-
-Handles:
-
-- Operational KPIs
-- Expedition reports
-- Inventory reports
-- Shipment reports
-- Asset reports
-- Emergency metrics
-- Communication metrics
-- Data export
-- Historical analysis
-
----
-
-## 18. System Administration & Security
-
-Handles:
-
-- Users
-- Roles
-- Permissions
-- Authentication
-- Privileged account protection
-- Station / expedition access scope
-- Audit logs
-- System configuration
-- Security events
-- Notification configuration
-- Weather configuration
-- System health
-- Backup status
-
----
-
-# AI & Intelligence Strategy
-
-POLARIS follows a **data-driven intelligence approach**.
-
-The core operational system does not require an LLM.
-
-This keeps operational recommendations explainable, traceable, and based on measurable operational data.
-
-## Inventory Intelligence
-
-**Historical Consumption → Current Stock → Personnel Count → Planned Requirements → Forecast → Stockout Risk → Resupply Recommendation**
-
-## Maintenance Intelligence
-
-**Operating Hours → Maintenance History → Asset Condition → Historical Patterns → Maintenance Risk → Maintenance Recommendation**
-
-## Weather Intelligence
-
-**Weather API → Weather Conditions → Configurable Thresholds → Risk Level → Emergency Trigger**
-
-## Reporting Intelligence
-
-**Operational Data → SQL Aggregation → KPIs → Analytics → Dashboard**
-
-## Human Review
-
-Operational recommendations are presented to authorized officers for review.
-
-**Prediction / Recommendation → Officer Review → Operational Decision → Action → Audit Record**
-
-This prevents the system from automatically making high-impact operational decisions without human oversight.
 
 ---
 
 # Data & Security
 
-POLARIS is designed around role-based and permission-based access.
+POLARIS is designed with role-based access control.
 
-## Security Controls
+Security features include:
 
 - Authentication
-- Role-Based Access Control
+- Role-based access control
 - Permission-based authorization
-- Least-privilege access
-- Station-level access where required
-- Expedition-level access where required
-- Audit logging
-- Security event tracking
-- Protected administrative operations
-- MFA support for privileged accounts
-- Environment-based secret management
-- Backend authorization
-
-## Example Roles
-
-- System Administrator
-- Expedition Manager
-- Logistics Officer
-- Station Manager
-- Inventory Officer
-- Asset Officer
-- Emergency Response Officer
-- Operations Officer
-
-## Authorization Flow
-
-**User Login → Authentication → Role Identification → Permission Check → Resource Scope Check → Authorized Operation → Audit Log**
-
-Backend authorization remains the final enforcement layer.
-
----
-
-# Prototype Screenshots
-
-The current prototype focuses on major operational interfaces.
-
-## 1. Expedition Management
-
-**Filename:** `expedition-management.png`
-
-**Upload to:**
-
-`docs/images/expedition-management.png`
-
-**Should show:**
-
-- Expedition dashboard
-- Statistics
-- Expedition registry
-- Search
-- Filters
-- Expedition status
-- Expedition information
-
----
-
-## 2. Expedition Registration
-
-**Filename:** `expedition-registration.png`
-
-**Upload to:**
-
-`docs/images/expedition-registration.png`
-
-**Should show:**
-
-- Register New Antarctic Expedition
-- Expedition ID
-- Expedition code
-- Official expedition title
-- Expedition year
-- Deployment information
-- Registration workflow
-
----
-
-## 3. Polar Navigation
-
-**Filename:** `polar-navigation.png`
-
-**Upload to:**
-
-`docs/images/polar-navigation.png`
-
-**Should show:**
-
-- Antarctic map
-- Research vessels
-- Vessel locations
-- Destination
-- Voyage status
-- Station locations
-- Fast-ice information
-
-This screenshot is also used as the current GIS/operational visualization prototype.
-
----
-
-## 4. Emergency Management
-
-**Filename:** `emergency-management.png`
-
-**Upload to:**
-
-`docs/images/emergency-management.png`
-
-**Should show:**
-
-- Active incidents
-- Severity
-- Station status
-- Incident lead
-- Communication status
-- Acknowledge action
-- Resolve action
-
----
-
-## 5. Emergency Reporting
-
-**Filename:** `emergency-report-dialog.png`
-
-**Upload to:**
-
-`docs/images/emergency-report-dialog.png`
-
-**Should show:**
-
-- Report Station Emergency popup
-- Incident headline
-- Station
-- Severity
-- Description
-- Field notes
-- Submit alert button
-
----
-
-# Project Structure
-
-```text
-POLARIS/
-│
-├── frontend/
-│   ├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── services/
-│   └── maps/
-│
-├── backend/
-│   ├── app/
-│   ├── api/
-│   ├── models/
-│   ├── schemas/
-│   ├── services/
-│   ├── forecasting/
-│   ├── notifications/
-│   ├── weather/
-│   └── tracking/
-│
-├── database/
-│   ├── migrations/
-│   ├── schema/
-│   └── seed/
-│
-├── docs/
-│   └── images/
-│       ├── expedition-management.png
-│       ├── expedition-registration.png
-│       ├── polar-navigation.png
-│       ├── emergency-management.png
-│       └── emergency-report-dialog.png
-│
-├── docker/
-│
-├── README.md
-│
-└── docker-compose.yml
-```
-
----
-
-# Business Model
-
-POLARIS is positioned as a **B2G / institutional digital infrastructure platform** for organizations involved in polar research, logistics, station operations, and expedition management.
-
-## Potential Users
-
-- Government research organizations
-- Polar research organizations
-- Antarctic expedition operators
-- Research station management teams
-- Logistics teams
-- Expedition managers
-- Emergency response teams
-- Scientific research teams
-- Institutional operations teams
-
-## Value Proposition
-
-POLARIS can provide organizations with:
-
-- Centralized expedition management
-- Better logistics visibility
-- Station inventory visibility
-- Forecast-based resupply planning
-- Operational asset tracking
-- Weather-risk monitoring
-- Emergency coordination
-- Structured communication
-- GIS-based situational awareness
-- Centralized reporting
-- Auditability
-
-## Business Model Options
-
-### Institutional Licensing
-
-Organizations can license POLARIS as an institutional operational management platform.
-
-**Organization → Annual / Institutional License → Platform Access → Configuration & Support**
-
-### Deployment & Integration
-
-Additional services can include:
-
-- Initial system configuration
-- Station configuration
-- User and role setup
-- Data migration
-- API integration
-- Weather API integration
-- Telemetry integration
-- Notification provider integration
-- GIS configuration
-- Training
-
-### Support & Maintenance
-
-Potential recurring services:
-
-- Technical support
-- System maintenance
-- Security updates
-- Infrastructure monitoring
-- Feature upgrades
-- Analytics improvements
-- Integration maintenance
-
-### Modular Expansion
-
-Organizations can deploy modules according to operational requirements.
-
-**Core Platform → Logistics → Inventory → Assets → Weather → Emergency → GIS → Analytics**
-
----
-
-# Feasibility & Viability
-
-## Technical Feasibility
-
-POLARIS uses established technologies:
-
-- React
-- Python
-- FastAPI
-- PostgreSQL
-- PostGIS
-- Supabase
-- OpenStreetMap
-- MapLibre
-- GNSS/GPS
-- Weather APIs
-- QR codes
-- WebSockets
-- Docker
-
-The architecture is modular, allowing individual services to be developed and tested independently.
-
-## Operational Feasibility
-
-The system is designed around real operational roles and workflows.
-
-Different users can interact with only the functions relevant to their responsibilities.
-
-**User → Role → Permission → Operational Module → Action → Audit**
-
-## Data Feasibility
-
-The system can combine:
-
-- Manually entered expedition data
-- Database records
-- QR movement events
-- GNSS/GPS telemetry
-- Weather API data
-- Inventory transactions
-- Maintenance records
-- Emergency events
-- Communication delivery events
-
-## Scalability
-
-The modular architecture allows additional stations, expeditions, assets, users, and operational data sources to be added without redesigning the complete system.
-
-## Connectivity Consideration
-
-Polar operations may involve different communication conditions.
-
-Where SATCOM or station communication infrastructure is available, POLARIS can support immediate event transmission and notification delivery.
-
-Communication integrations can use provider abstraction, retry mechanisms, and fallback handling where supported.
+- Station and expedition-level access
+- Audit logs
+- Secure API access
+- Input validation
+- Database access controls
+- Notification access controls
+- Privileged account protection
+
+All important operational actions can be recorded for auditing.
 
 ---
 
 # Expected Outcomes
 
-POLARIS is designed to provide the following operational outcomes:
+POLARIS aims to provide:
 
-### 1. Centralized Expedition Management
-
-Expedition information can be managed from a single platform.
-
-### 2. Improved Logistics Visibility
-
-Cargo, containers, manifests, shipments, voyages, and receiving records can be connected.
-
-### 3. Better Inventory Awareness
-
-Station teams can monitor stock levels and consumption.
-
-### 4. Early Stockout Identification
-
-Forecasting can identify potential shortages before critical depletion.
-
-### 5. Structured Resupply Planning
-
-Forecast results can generate resupply recommendations for officer review.
-
-### 6. Asset Lifecycle Visibility
-
-Assets and maintenance activities can be tracked throughout their operational lifecycle.
-
-### 7. Weather Risk Awareness
-
-Weather data can be evaluated against configurable operational thresholds.
-
-### 8. Faster Emergency Coordination
-
-Emergency events can trigger structured communication workflows.
-
-### 9. Geographic Situational Awareness
-
-Stations, vessels, vehicles, routes, risks, and incidents can be visualized geographically.
-
-### 10. Better Reporting
-
-Operational data can be converted into dashboards, KPIs, reports, and historical analysis.
+- Centralized expedition management
+- Better logistics visibility
+- Better inventory planning
+- Improved asset management
+- Faster emergency communication
+- Better operational awareness
+- Reduced manual coordination
+- Better reporting
+- Improved decision support
 
 ---
 
 # Potential Applications
 
-POLARIS can potentially be adapted for:
+The platform can be adapted for:
 
 - Antarctic research expeditions
-- Arctic research operations
-- Research station management
-- Polar logistics
-- Scientific field operations
-- Remote station management
-- Vessel-supported research missions
-- Emergency response coordination
-- Remote asset management
-- Institutional expedition planning
-
-The architecture can also be adapted to other remote and infrastructure-constrained environments where logistics, personnel, assets, weather, and emergency operations must be coordinated centrally.
+- Polar research stations
+- Scientific field missions
+- Remote logistics operations
+- Government research organizations
+- Emergency response operations
+- Remote infrastructure management
+- Other geographically isolated operations
 
 ---
 
-# Future Scope
+# Business Model
 
-Future versions of POLARIS can expand the platform with:
+POLARIS can follow a **B2G / institutional software model**.
 
-## Advanced Forecasting
+Potential customers can include:
 
-- More advanced time-series forecasting
-- Seasonal consumption analysis
-- Multi-station demand forecasting
-- Confidence intervals
-- Scenario-based resupply planning
+- Government organizations
+- Research organizations
+- Polar research programs
+- Expedition operators
+- Remote infrastructure organizations
 
-## Advanced Asset Intelligence
+Possible model:
 
-- Predictive maintenance models
-- Failure probability estimation
-- Sensor-based equipment monitoring
-- Automated maintenance scheduling
+**Institutional Deployment → Annual Software / Support Contract → Custom Modules → Integration & Maintenance Services**
 
-## Advanced GIS
-
-- More operational map layers
-- Route analysis
-- Risk zones
-- Historical movement visualization
-- Advanced spatial analytics
-
-## Advanced Communication
-
-- Additional communication providers
-- Satellite communication integration
-- Delivery fallback strategies
-- Escalation workflows
-- Acknowledgement escalation
-
-## IoT Integration
-
-- Environmental sensors
-- Station equipment sensors
-- Fuel sensors
-- Cold-chain monitoring
-- Generator telemetry
-
-## Digital Twin Capabilities
-
-A future version could build a digital operational representation of:
-
-- Stations
-- Vessels
-- Assets
-- Inventory
-- Personnel
-- Logistics
-- Environmental conditions
-
-## Offline / Intermittent Connectivity
-
-Future versions can support:
-
-- Local caching
-- Offline data capture
-- Store-and-forward synchronization
-- Conflict resolution
-- Delayed event transmission
-
-## Advanced Analytics
-
-- Expedition performance analytics
-- Logistics performance indicators
-- Emergency response analytics
-- Asset utilization analytics
-- Inventory efficiency analytics
-- Communication delivery analytics
+The platform can also be adapted for other remote operational environments.
 
 ---
 
-# Project Status
-
-## Current Stage
-
-**Prototype / Under Development**
-
-The current prototype demonstrates major operational interfaces and workflows including:
-
-- Expedition management
-- Expedition registration
-- Polar navigation
-- Vessel operational visualization
-- Emergency management
-- Emergency reporting
-- GIS-oriented operational visualization
-
-## Current Prototype Screens
-
-| Screen | Status |
-|---|---|
-| Expedition Management | Prototype |
-| Expedition Registration | Prototype |
-| Polar Navigation | Prototype |
-| Emergency Management | Prototype |
-| Emergency Reporting | Prototype |
-| GIS Operational Visualization | Prototype using Polar Navigation |
-| Backend Integration | Under Development |
-| Database Integration | Under Development |
-| Inventory Forecasting | Planned / Under Development |
-| Asset Prediction | Future / Optional |
-| Weather API Integration | Planned / Under Development |
-| Notification Provider Integration | Planned / Under Development |
-| Production Deployment | Future Scope |
-
-## Development Priorities
-
-**Prototype UI → Backend APIs → Database Integration → Core Workflows → External Integrations → Testing → Security Hardening → Deployment Readiness**
-
----
 
 # Smart India Hackathon
 
-## Event
+**Event:** Smart India Hackathon 2026
 
-**Smart India Hackathon 2026**
+**Theme:** Smart Automation
 
-## Problem Statement
+**Project:** POLARIS — Integrated Polar Expedition Logistics & Asset Management System
 
-**SIH26062**
-
-## Theme
-
-**Smart Automation**
-
-## Category
-
-**Software**
-
-## Project
-
-**POLARIS — Integrated Polar Expedition Logistics & Asset Management System**
-
-### SIH Alignment
-
-POLARIS addresses the challenge of coordinating complex remote operations through:
-
-- Centralized digital workflows
-- Operational data integration
-- Logistics automation
-- Inventory forecasting
-- Asset lifecycle management
-- Weather-risk evaluation
-- Emergency workflows
-- Notification automation
-- GIS-based visualization
-- Role-based operational access
-- Data-driven decision support
-
-The system is designed to demonstrate how multiple operational processes can be integrated into one coordinated platform.
+The project focuses on building a centralized digital platform for polar expedition logistics, resource management, operational tracking, emergency response, and decision support.
 
 ---
 
-# Prototype Disclaimer
+## Prototype Status
 
-> **Important:** POLARIS is a prototype developed for demonstration and Smart India Hackathon purposes.
+**Project Status: 40% Completed, remaining work in progress**
 
-The current system should not be interpreted as a production deployment.
+The current prototype focuses on demonstrating the main components of POLARIS, including **expedition planning, personnel management, cargo and inventory management, polar navigation, asset management, weather monitoring, emergency management, GIS visualization, and the operational dashboard**.
 
-- It is not officially deployed by the Ministry of Earth Sciences.
-- It is not officially deployed by NCPOR.
-- It is not currently represented as an officially adopted government system.
-- Prototype data may be simulated or manually entered.
-- External integrations may be mocked, configured, or under development.
-- Actual operational deployment would require domain validation, security assessment, infrastructure validation, communication integration, testing, and authorization from the relevant organization.
-
-The architecture and workflows presented in this README describe the intended system design and prototype capabilities.
-
----
-
-# Why POLARIS?
-
-Polar expedition operations involve many interconnected resources and events.
-
-A single expedition may involve:
-
-**Personnel + Stations + Vessels + Cargo + Containers + Inventory + Assets + Weather + Emergencies + Communication + GIS + Reporting**
-
-Managing these activities independently can make it difficult to maintain a unified operational picture.
-
-POLARIS is designed around an integrated approach:
-
-**Plan → Assign → Transport → Track → Receive → Monitor → Forecast → Detect → Communicate → Respond → Analyze**
-
-The platform combines operational workflows into one centralized system while maintaining clear boundaries between modules.
-
-### Core Differentiators
-
-- Centralized expedition operations
-- Operational personnel movement without continuous personnel GPS tracking
-- Clear separation between cargo and inventory
-- GNSS/GPS-based vessel and vehicle positioning
-- Data-driven inventory forecasting
-- Structured resupply workflow
-- Asset maintenance tracking
-- Weather risk evaluation
-- Emergency lifecycle management
-- Multi-channel communication
-- GIS-based operational visualization
-- Role-based security
-- Auditability
-- Human-reviewed operational recommendations
+Further **backend integration, real-time tracking, forecasting, communication services, testing, and scalability improvements** will be added as development continues.
 
 ---
 
 # License
 
-This project is developed as a Smart India Hackathon prototype.
+This project is developed for educational, research, and Smart India Hackathon purposes.
 
-License and usage terms can be added according to the project team's chosen open-source or institutional licensing model.
+License details can be added based on the team's final repository and submission requirements.
