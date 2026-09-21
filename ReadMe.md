@@ -469,7 +469,7 @@ Different users can see different information based on their permissions.
 
 - React
 - TypeScript
-- GIS and OSM
+- GIS and OpenStreetMap
 
 ## Backend
 
